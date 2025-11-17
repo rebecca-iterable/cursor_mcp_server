@@ -1,0 +1,144 @@
+# Campaign Metrics Aggregate Report
+**Generated:** {{currentDate}}  
+**Report Period:** Most Recent Campaigns
+
+## Executive Summary
+
+This report aggregates metrics from the 12 most recent campaigns across Email, In-App, and Embedded message mediums.
+
+---
+
+## Overall Performance Metrics
+
+### Email Campaigns (4 campaigns analyzed)
+- **Total Email Sends:** 2
+- **Total Emails Delivered:** 2.0
+- **Total Email Opens:** 5
+- **Unique Email Opens:** 1
+- **Total Email Clicks:** 0
+- **Unique Email Clicks:** 0
+- **Total Bounces:** 0
+- **Total Complaints:** 0
+- **Total Unsubscribes:** 0
+- **Total Email Send Skips:** 3
+
+**Email Performance Rates:**
+- **Delivery Rate:** 100.0% (2.0 delivered / 2 sent)
+- **Open Rate:** 50.0% (1 unique open / 2 unique sends)
+- **Click Rate:** 0.0% (0 clicks / 2 sends)
+- **Bounce Rate:** 0.0%
+- **Complaint Rate:** 0.0%
+- **Unsubscribe Rate:** 0.0%
+
+### In-App Campaigns (7 campaigns analyzed)
+- **Total In-App Sends:** 3
+- **Unique In-App Sends:** 3
+- **Total In-App Opens:** 0
+- **Unique In-App Opens:** 0
+- **Total In-App Clicks:** 0
+- **Unique In-App Clicks:** 0
+- **Total In-App Closes:** 0
+- **Total In-App Deletes:** 0
+- **Total In-App Send Skips:** 0
+- **Total Inbox Impressions:** 0
+- **Total Unsubscribes:** 0
+
+**In-App Performance Rates:**
+- **Open Rate:** 0.0% (0 opens / 3 sends)
+- **Click Rate:** 0.0% (0 clicks / 3 sends)
+
+### Embedded Campaigns (2 campaigns analyzed)
+- **Total Unsubscribes:** 0
+- **Total Purchases:** 0
+- **Total Custom Conversions:** 0
+
+---
+
+## Revenue & Conversion Metrics
+
+### Overall Revenue
+- **Total Revenue:** $0.00
+- **Average Order Value:** $0.00
+- **Total Purchases:** 0
+- **Unique Purchases:** 0
+- **Revenue per M (Email):** $0.00
+- **Purchases per M (Email):** 0.0
+
+### Custom Conversions
+- **Total Custom Conversions:** 0
+- **Unique Custom Conversions:** 0
+- **Sum of Custom Conversions:** $0.00
+- **Average Custom Conversion Value:** $0.00
+
+---
+
+## Campaign Breakdown by Medium
+
+### Email Campaigns
+| Campaign ID | Campaign Name | State | Sends | Delivered | Opens | Clicks | Unsubscribes |
+|------------|---------------|-------|-------|-----------|-------|--------|--------------|
+| 15653018 | testing | Running | 0 | 0.0 | 0 | 0 | 0 |
+| 15565006 | Experiment Test | Ready | 0 | 0.0 | 0 | 0 | 0 |
+| 15562223 | product review campaign 1 | Ready | 0 | 0.0 | 0 | 0 | 0 |
+| 12515814 | Rakuten Email | Running | 2 | 2.0 | 5 (1 unique) | 0 | 0 |
+
+### In-App Campaigns
+| Campaign ID | Campaign Name | State | Sends | Opens | Clicks | Unsubscribes |
+|------------|---------------|-------|-------|-------|--------|--------------|
+| 15704059 | testing | Running | 1 | 0 | 0 | 0 |
+| 15703833 | Square Custom In-App Test | Running | 2 | 0 | 0 | 0 |
+| 15262319 | Carvana In-App Message | Running | 0 | 0 | 0 | 0 |
+| 15134773 | testcarvana | Archived | 0 | 0 | 0 | 0 |
+| 15134549 | custom_in-browser_rakuten | Archived | 0 | 0 | 0 | 0 |
+| 15133918 | in-browser_test_rakuten_new | Archived | 0 | 0 | 0 | 0 |
+
+### Embedded Campaigns
+| Campaign ID | Campaign Name | State | Purchases | Unsubscribes |
+|------------|---------------|-------|-----------|--------------|
+| 15082803 | test_collectivevoice | Running | 0 | 0 |
+| 15082709 | Collective Voice Embedded Banner 3 | Running | 0 | 0 |
+
+---
+
+## Key Insights
+
+1. **Email Performance:**
+   - Only 1 active email campaign (Rakuten Email) showing engagement
+   - 100% delivery rate with 50% open rate on delivered emails
+   - No click activity observed across email campaigns
+
+2. **In-App Performance:**
+   - Low activity with only 3 total sends across 7 campaigns
+   - No opens or clicks recorded
+   - Most campaigns are in Running state but showing minimal activity
+
+3. **Engagement:**
+   - Overall engagement is low across all channels
+   - No revenue or conversions generated
+   - No unsubscribes or complaints, indicating good list health
+
+4. **Campaign States:**
+   - Multiple campaigns in "Running" state with minimal activity
+   - Several campaigns in "Ready" state not yet launched
+   - Some archived campaigns with zero activity
+
+---
+
+## Recommendations
+
+1. **Review Active Campaigns:** Investigate why Running campaigns show minimal activity
+2. **Launch Ready Campaigns:** Consider activating campaigns in "Ready" state
+3. **Optimize In-App:** Review in-app campaign targeting and timing
+4. **A/B Testing:** Test different subject lines and content for email campaigns
+5. **Monitor Engagement:** Set up alerts for campaigns with zero engagement after launch
+
+---
+
+## Data Notes
+
+- Metrics aggregated from 12 most recent campaigns
+- Some campaigns may have limited data due to recent creation or low activity
+- Rate limits encountered during data collection (1 campaign metrics unavailable)
+- All monetary values in USD
+- Percentages calculated based on available data
+
