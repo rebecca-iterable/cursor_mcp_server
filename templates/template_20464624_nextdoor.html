@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Neighborhood</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+        <tr>
+            <td align="center" style="padding: 40px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <!-- Header with Logo -->
+                    <tr>
+                        <td align="center" style="padding: 40px 40px 30px 40px; background-color: #ffffff;">
+                            <img src="https://about.nextdoor.com/hubfs/logo-nextdoor-wordmark-lawn-2.png?hsLang=en" alt="Nextdoor" width="180" height="auto" style="display: block; max-width: 180px; height: auto;" />
+                        </td>
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td style="padding: 0 40px 30px 40px;">
+                            <h1 style="margin: 0 0 20px 0; font-size: 28px; font-weight: 600; color: #333333; line-height: 1.3;">
+                                Connecting Neighbors, Building Stronger Communities
+                            </h1>
+                            <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #666666;">
+                                Hi {{firstName}},
+                            </p>
+                            <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #666666;">
+                                Welcome to your neighborhood! We're thrilled to have you join the community where neighbors come together to share, help, and connect.
+                            </p>
+                            <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #666666;">
+                                Your neighborhood hub is ready for you to discover local recommendations, connect with neighbors, and stay informed about what's happening right around the corner.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- CTA Button -->
+                    <tr>
+                        <td align="center" style="padding: 0 40px 30px 40px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td align="center" style="background-color: #8ED500; border-radius: 6px;">
+                                        <a href="{{ctaUrl}}" style="display: inline-block; padding: 14px 32px; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 6px;">
+                                            Explore Your Neighborhood
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Additional Content -->
+                    <tr>
+                        <td style="padding: 0 40px 30px 40px;">
+                            <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #666666;">
+                                Here's what you can do on Nextdoor:
+                            </p>
+                            <ul style="margin: 0 0 20px 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #666666;">
+                                <li style="margin-bottom: 10px;">Get recommendations from neighbors you trust</li>
+                                <li style="margin-bottom: 10px;">Stay informed about local news and events</li>
+                                <li style="margin-bottom: 10px;">Buy, sell, or give away items in your area</li>
+                                <li style="margin-bottom: 10px;">Connect with neighbors who share your interests</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px 40px; background-color: #f9f9f9; border-top: 1px solid #e5e5e5; border-radius: 0 0 8px 8px;">
+                            <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #999999; text-align: center;">
+                                Questions? We're here to help. Visit our <a href="https://help.nextdoor.com" style="color: #8ED500; text-decoration: none;">Help Center</a> or reply to this email.
+                            </p>
+                            <p style="margin: 0; font-size: 12px; line-height: 1.5; color: #999999; text-align: center;">
+                                © {{currentYear}} Nextdoor. All rights reserved.<br>
+                                <a href="{{unsubscribeUrl}}" style="color: #999999; text-decoration: underline;">Unsubscribe</a> | 
+                                <a href="{{preferencesUrl}}" style="color: #999999; text-decoration: underline;">Email Preferences</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
