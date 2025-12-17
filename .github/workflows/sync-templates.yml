@@ -1,0 +1,49 @@
+name: Sync Templates to Iterable
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'templates/**/*.html'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  sync-templates:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history needed for detecting changes
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Sync templates to Iterable
+        env:
+          ITERABLE_API_KEY: ${{ secrets.ITERABLE_API_KEY }}
+        run: node scripts/sync-templates.js
+      
+      - name: Create summary
+        if: always()
+        run: |
+          if [ -f sync-results.json ]; then
+            echo "## Template Sync Results" >> $GITHUB_STEP_SUMMARY
+            cat sync-results.json | node -e "
+              const data = JSON.parse(require('fs').readFileSync(0, 'utf-8'));
+              console.log('| Template ID | Status | Message |');
+              console.log('|------------|--------|---------|');
+              data.results.forEach(r => {
+                const status = r.success ? '✅ Success' : '❌ Failed';
+                console.log(\`| \${r.templateId} | \${status} | \${r.message || 'Updated'} |\`);
+              });
+            " >> $GITHUB_STEP_SUMMARY
+          fi

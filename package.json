@@ -1,0 +1,25 @@
+{
+  "name": "cursor_mcp_server",
+  "version": "1.0.0",
+  "description": "For testing out use case examples using Iterable mcp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync-templates": "node scripts/sync-templates.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebecca-iterable/cursor_mcp_server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rebecca-iterable/cursor_mcp_server/issues"
+  },
+  "homepage": "https://github.com/rebecca-iterable/cursor_mcp_server#readme",
+  "dependencies": {
+    "svg2img": "^1.0.0-beta.2"
+  }
+}
