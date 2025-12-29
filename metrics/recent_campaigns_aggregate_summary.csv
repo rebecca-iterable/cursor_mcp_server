@@ -1,0 +1,14 @@
+Campaign ID,Campaign Name,Type,Status,Medium,Total Sends,Total Delivered,Total Opens,Unique Opens,Total Clicks,Unique Clicks,Open Rate,Click Rate,Click-to-Open Rate,Bounces,Unsubscribes,Complaints
+16272216,Carvana - Special Offer,Triggered,Running,Email,3,3,1,1,0,0,33.3%,0.0%,0.0%,0,0,0
+16272214,Carvana - New Cars,Triggered,Running,Email,8,8,12,8,2,2,100.0%,25.0%,25.0%,0,0,0
+16132470,Carvana Car Recs,Blast,Ready,Email,0,0,0,0,0,0,N/A,N/A,N/A,0,0,0
+16032902,REI Write a Review,Triggered,Running,Email,5,5,12,2,0,0,40.0%,0.0%,0.0%,0,0,0
+16015587,transactional test suppress,Triggered,Finished,Email,0,0,0,0,0,0,N/A,N/A,N/A,0,0,0
+15653018,testing,Triggered,Running,Email,0,0,0,0,0,0,N/A,N/A,N/A,0,0,0
+16132118,app_browser_notification_rakuten,Triggered,Running,InApp,1,1,1,1,0,0,100.0%,0.0%,0.0%,N/A,0,N/A
+15704059,testing,Triggered,Running,InApp,2,2,1,1,0,0,50.0%,0.0%,0.0%,N/A,0,N/A
+15703833,Square Custom In-App Test,Triggered,Running,InApp,2,1,0,0,0,0,0.0%,0.0%,N/A,N/A,0,N/A
+15262319,Carvana In-App Message,Triggered,Running,InApp,0,0,0,0,0,0,N/A,N/A,N/A,N/A,0,N/A
+
+
+

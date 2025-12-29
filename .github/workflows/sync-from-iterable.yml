@@ -1,0 +1,47 @@
+name: Sync Templates from Iterable to GitHub
+
+on:
+  repository_dispatch:
+    types: [iterable-template-updated]
+  workflow_dispatch:
+    inputs:
+      template_id:
+        description: 'Template ID to sync from Iterable'
+        required: true
+        type: string
+
+jobs:
+  sync-from-iterable:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Sync template from Iterable
+        env:
+          ITERABLE_API_KEY: ${{ secrets.ITERABLE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TEMPLATE_ID: ${{ github.event.inputs.template_id || github.event.client_payload.template_id }}
+        run: node scripts/sync-from-iterable.js
+      
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add templates/
+          git diff --staged --quiet || git commit -m "Sync template from Iterable [skip ci]"
+          git push

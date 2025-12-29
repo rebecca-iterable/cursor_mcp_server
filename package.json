@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync-templates": "node scripts/sync-templates.js"
+    "sync-templates": "node scripts/sync-templates.js",
+    "sync-from-iterable": "node scripts/sync-from-iterable.js"
   },
   "repository": {
     "type": "git",
